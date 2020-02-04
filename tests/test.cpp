@@ -1,8 +1,9 @@
 //Copyright 2020 <boikov3>
-
 #include <gtest/gtest.h>
 #include "Stack1.h"
 #include "Stack2.h"
+
+
 
 const int a = 7;
 const int b = 15;
@@ -57,6 +58,8 @@ TEST(stack1, second_push)
     EXPECT_EQ(stack.head(), a);
 }
 
+
+
 TEST(stack2, push_emplace)
 {
     Stack2 < std::pair <int, double>> stack{};
@@ -67,6 +70,7 @@ TEST(stack2, push_emplace)
     auto pair = std::make_pair(7, 9.2);
     EXPECT_EQ(stack.head(), pair);
 }
+
 
 TEST(stack2, pop)
 {
@@ -106,6 +110,7 @@ TEST(stack2, excepthead)
 
     EXPECT_THROW(stack.head(), std::logic_error);
 }
+
 
 TEST(stak12, testcopy)
 {
