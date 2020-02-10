@@ -1,4 +1,4 @@
-//Copyright 2020 <boikov3>
+// Copyright 2020 <boikov3>
 
 #ifndef TEMPLATE1_STACK1_H
 #define TEMPLATE1_STACK1_H
@@ -6,8 +6,6 @@
 #include <iostream>
 #include "exception"
 #include "Node.h"
-
-
 
 template<typename T>
 class Stack1 {

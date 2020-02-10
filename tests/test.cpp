@@ -1,9 +1,7 @@
-//Copyright 2020 <boikov3>
+// Copyright 2020 <boikov3>
 #include <gtest/gtest.h>
 #include "Stack1.h"
 #include "Stack2.h"
-
-
 
 const int a = 7;
 const int b = 15;
