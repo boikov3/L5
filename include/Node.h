@@ -9,6 +9,13 @@ struct Node
     Node<T> *prev;
 
     Node(T valu1e, Node<T> *pre1v) : value(valu1e), prev(pre1v) {}
+    ~Node<T>() 
+{ 
+if (prev != nullptr) { 
+delete prev; 
+prev = nullptr; 
+} 
+}
 };
 
 #endif //TEMPLATE1_NODE_H
