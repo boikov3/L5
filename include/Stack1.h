@@ -53,6 +53,13 @@ public:
         else if (node != nullptr)
             node = node->prev;
     }
+    ~Stack1() 
+{ 
+if (node != nullptr) { 
+delete node; 
+node = nullptr; 
+} 
+}
 };
 
 #endif //TEMPLATE1_STACK1_H
