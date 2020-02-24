@@ -110,14 +110,6 @@ TEST(stack2, excepthead)
 }
 
 
-TEST(stak12, testcopy)
-{
-    EXPECT_EQ(std::is_copy_constructible_v<Stack1<int>>, false);
-    EXPECT_EQ(std::is_copy_constructible_v<Stack2<int>>, false);
-
-    EXPECT_EQ(std::is_copy_assignable_v<Stack1<int>>, false);
-    EXPECT_EQ(std::is_copy_assignable_v<Stack2<int>>, false);
-}
 
 TEST(stak12, testmove)
 {
