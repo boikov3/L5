@@ -28,19 +28,6 @@ TEST(stack1, pop)
     EXPECT_EQ(stack.head(), a);
 }
 
-TEST(stack1, test_error_empty_stack_pop)
-{
-    Stack1 <int> stack;
-
-    EXPECT_THROW(stack.pop(), std::logic_error);
-}
-
-TEST(stack1, test_error_empty_stack_head)
-{
-    Stack1 <double> stack;
-
-    EXPECT_THROW(stack.head(), std::logic_error);
-}
 
 TEST(stack1, second_push)
 {
@@ -94,22 +81,6 @@ TEST(stack2, push)
 
     EXPECT_EQ(stack.head(), 6.6);
 }
-
-TEST(stack2, except)
-{
-    Stack2 <int> stack;
-
-    EXPECT_THROW(stack.pop(), std::logic_error);
-}
-
-TEST(stack2, excepthead)
-{
-    Stack2 <int> stack;
-
-    EXPECT_THROW(stack.head(), std::logic_error);
-}
-
-
 
 TEST(stak12, testmove)
 {
