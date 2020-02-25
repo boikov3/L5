@@ -1,24 +1,24 @@
 // Copyright 2020 <boikov3>
 
-#ifndef TEMPLATE1_STACK2_H
-#define TEMPLATE1_STACK2_H
+#ifndef TEMPLATE1_STACK_PUSHEMPALCE_H
+#define TEMPLATE1_STACK_PUSHEMPALCE_H
 
 #include <iostream>
 #include <exception>
 #include "Node.h"
 
 template<typename T>
-class Stack2 {
+class Stackpushemplace {
 private:
     Node<T> *node = nullptr;
 
 public:
 
-    Stack2() = default;
+    Stackpushemplace() = default;
 
-    Stack2(const Stack2 &stack) = delete;
-    Stack2(Stack2 &&stack) = default;
-    auto operator=(Stack2 &&stack) noexcept -> Stack2 & = default;
+    Stackpushemplace(const Stackpushemplace &stack) = delete;
+    Stackpushemplace(Stackpushemplace &&stack) = default;
+    auto operator=(Stackpushemplace &&stack) noexcept -> Stackpushemplace & = default;
 
     template<typename ... Args>
     void push_emplace(Args &&... value) {
@@ -50,4 +50,4 @@ public:
 };
 
 
-#endif //TEMPLATE1_STACK2_H
+#endif
